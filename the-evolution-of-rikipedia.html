@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <title>The Evolution of Rikipedia | JS | Rikipedia</title> 
+  </head>
+  <body>
+<style>
+#mycanvas{width:100%}
+</style>
+	<!--This draws the canvas on the webpage -->
+    <canvas id="mycanvas" ></canvas> 
+  </body>
+ 
+  <!-- Include the processing.js library -->
+  <!-- See https://khanacademy.zendesk.com/hc/en-us/articles/202260404-What-parts-of-ProcessingJS-does-Khan-Academy-support- for differences -->
+  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+  <script>
+  var programCode = function(processingInstance) {
+    with (processingInstance) {
+      size(400, 400); 
+      frameRate(60);
+        
+      // Paste code from Khan Academy here:
+//helpful links:
+//riki-pedia.org
+//github.com
+//khanacademy.org
+//made by Ricky Kelley of riki-pedia.org
+var sNum;
+fill(0, 0, 0);
+textSize(21);
+textAlign(CENTER);
+var s = function(){
+sNum=0;
+background(136, 0, 255);
+text("The Evolution of Rikipedia", 200,200);
+textSize(13);
+text("Click to start",200,225);
+};
+var s1 = function(){
+sNum=1;
+textSize(22);
+background(240, 116, 14);
+text("Rikipedia started on Kahn Academy", 195,150);
+text("I had decided to learn to code",195,175);
+textSize(13);
+text("Keep clicking",200,200);
+};
+var s2 = function(){
+sNum=2;
+textSize(22);
+background(27, 238, 242);
+text("I had started with Processing.JS,",195,150);
+text("which consitsts of shapes like this:",195,175);
+fill(250, 250, 250);
+rect(156,200,102,25);
+fill(0, 0, 0);
+text("rectangle",205,220);
+ellipse(207,280,118,111);
+fill(255, 255, 255);
+text("circle/ellipse", 210,279);
+text("and a bunch of other shapes",200,360);
+};
+var s3 = function(){
+sNum=3;
+background(0, 255, 98);
+text("After a long time worth of JS,", 200, 175);
+text("I finally decide to learn HTML,",200,200);
+text("which is used to make websites",200,225);
+text("<endtext>",200,250);
+textSize(12);
+text("purposeful non-HTML example", 200,275);
+textSize(16);
+};
+var s4 = function(){
+    sNum=4;
+background(0, 38, 255);
+text("Then I decided to practice the HTML ", 200,200);
+text("that I had learned.", 200,225);
+};
+var s5 = function(){
+    sNum =5;
+background(251, 0, 255);
+text("On Khan Academy, you could practice making ", 200,200);
+text("webpages and other programs, so I started there.",200,225);
+};
+var s6 = function(){
+    sNum = 6;
+background(255, 200, 0);
+text("I practiced miniture versions of Rikipedia,",200,200);
+text("such as old homepage or the first article", 200,225);
+};
+var s7 = function(){
+sNum=7;
+background(255, 0, 0);
+text("Then Khan Academy, where I learned to code, ",200,200);
+text("suggested Github, a free website hosting app.",200,225);
+text("I liked this idea, so I started using Github.",200,250);
+text("Rikipedia was becoming real.",200,275);
+};
+var s8 = function(){
+sNum=8;
+background(0, 255, 0);
+text("At the time, Rikipedia was kind of limited.",200,200);
+text("It did not have it's own domain name or the new",200,225);
+text("homepage, and I could not see how many visitors I had.",200,250);
+};
+var s9 = function(){
+sNum=9;
+background(0, 89, 255);
+text("In July 2023, I got a domain name registered",200,200);
+text("I made the new homepage, new subdomains,",200,225);
+text("I got to see important stats, and make custom emails.",200,250);
+text("It was the dream",200,275);
+};
+var s10 = function(){
+    sNum=10;
+    background(0, 230, 255);
+text("Rikipedia grew to what it is now, adding a newsletter",200,200);
+text("and other articles",200,225);
+
+};
+var s11 = function(){
+sNum =11;
+background(255, 98, 0);
+text("And on 9/4/23, this script was finished and marked as:",200,200);
+text("THE FIRST JS EVER ON RIKIPEDIA",200,225);
+};
+s();
+//logic
+mouseClicked=function(){
+    if (sNum === 0){s1();}
+else if(sNum === 1){s2();}
+else if(sNum ===2){s3();}
+else if(sNum === 3){s4();}
+else if(sNum === 4){s5();}
+else if (sNum === 5){s6();}
+else if (sNum===6){s7();}
+else if (sNum===7){s8();}
+else if (sNum===8){s9();}
+else if (sNum===9){s10();}
+else if (sNum===10){s11();}
+else if (sNum===11){s();}
+};
+
+    }};
+
+  // Get the canvas that ProcessingJS will use
+  var canvas = document.getElementById("mycanvas"); 
+  // Pass the function to ProcessingJS constructor
+  var processingInstance = new Processing(canvas, programCode); 
+  </script>
+</html>
